@@ -1,0 +1,204 @@
+/* untuk semua */
+.my-footer{
+    /* position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    background:  linear-gradient(to left, #e9d362, #333333);
+    padding:  20px 20px;
+}
+.my-footer address{
+    color: rgb(12, 12, 12);
+    margin: auto;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+/* end untuk semua */
+
+/* register */
+.daftar{
+    background-image: url(./assets/3d-render-leaves-bright-sunny-defocussed-background.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    
+}
+.register-container {
+    margin-top: 100px;
+}
+.inidaftar{
+    margin-top: 200px;
+    background: linear-gradient(to right, #a8ff78, #78ffd6);
+    color: black;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    outline-style: solid;
+    outline-color: green;
+    outline-width: medium;
+}
+.gformregist {
+    background: linear-gradient(to left, #a8ff78, #78ffd6);
+}
+.cformregist {
+    background: linear-gradient(to right, #a8ff78, #78ffd6);
+    border: 2px solid cyan;
+    border-radius: 8px;
+    padding: 5px;
+    border-style: groove;
+    color:orangered;
+}
+.card-footer a {
+    color: red;
+}
+.tombol {
+    background-color: #04AA6D;
+    border: 2px solid cyan;
+    color: black;
+    font-size: 16px;
+}
+/* end register */
+
+/* login */
+.inilogin {
+    background-image: url(./assets/3d-render-with-green-leaves.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+}
+
+.login-container {
+    margin-top: 100px;
+    
+}
+
+.card1 {
+    margin-top: 200px;
+    background: linear-gradient(to right, #a8ff78, #78ffd6);
+    color: black;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    outline-style: solid;
+    outline-color: green;
+    outline-width: medium;
+    
+}
+
+.gformlogin  {
+    background: linear-gradient(to left, #a8ff78, #78ffd6);
+}
+
+.cformlogin {
+    background: linear-gradient(to right, #a8ff78, #78ffd6);
+    border: 2px solid cyan;
+    border-radius: 8px ;
+    padding: 5px;
+    border-style: groove;
+}
+
+.card-footer a {
+    color: red;
+}
+
+.tombol1 {
+    background-color: #04AA6D;
+    border: 2px solid cyan;
+    color: black;
+    font-size: 16px;
+
+}
+/* end login */
+
+/* index/home */
+.home {
+    background: url(./assets/spirit.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.container-content{
+    padding: 25px;
+    background: linear-gradient(to right, #232526, #414345);
+    background-size: cover;
+    background-position: center;
+    filter:opacity(0.9);
+    background-color: orange;
+    border-radius: 50px;
+    box-shadow: 0px 16px 64px rgba(44, 12, 1, 5);
+    margin-top: 15px;
+}
+.header-text {
+    text-align: center;
+    color: green ;
+
+}
+/* end index/home */
+
+/* todolist */
+.todolist {
+    background: linear-gradient(to right, #181818, #BA8B02);
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.judul {
+    text-align: center;
+}
+
+.table {
+    border: 1px solid yellow;
+
+}
+
+.table th {
+    background: linear-gradient(to left, #181818, #BA8B02);
+    color: white;
+    text-align: center;
+}
+
+.table td {
+    background: linear-gradient(to top, #3c3b3f, #605c3c);
+    color: #fff;
+    text-align: center;
+}
+
+.tombol2 {
+    background: linear-gradient(to right, #8e0e00, #1f1c18) ;
+    border: 2px solid yellow;
+    color: white;
+    font-size: 16px;
+}
+/* end todolist */
+
+/* tambah todolist */
+.tambah {
+    background: linear-gradient(to right, #181818, #BA8B02);
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+/* end tambah todolist */
+
+/* edit todolist */
+.edit {
+    background: linear-gradient(to right, #181818, #BA8B02);
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+/* end edit todolist */
