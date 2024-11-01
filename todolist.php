@@ -36,17 +36,18 @@ if (isset($_GET['pesan']) and $_GET['pesan'] == 'hapus beerhasil') {
 <!-- navbar -->
 
 <body class="todolist d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-lg bg-dark">
+<nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-
-            <nav class="navbar bg-dark justify-content-start">
-                <form class="container-fluid justify-content-start">
-                    <a class="navbar-brand" href="#">TO DO</a>
+        
+            <nav class="navbar bg-dark d-flex w-100">
+                <a class="navbar-brand" href="#">TO DO</a>
+                <form class="align-items-center">
                     <a class="btn btn-outline-success me-2" type="button" href="index.php?halaman=home">HOME</a>
                     <a class="btn  btn-outline-success me-2" type="button" href="todolist.php?halaman=home">TODOLIST</a>
+                    
                 </form>
+                <a class="btn btn-danger " href="logout.php?halaman=home">Log Out</a>
             </nav>
-            <a class="btn btn-danger " href="logout.php?halaman=home">Log Out</a>
         </div>
     </nav>
     <!-- end navbar -->

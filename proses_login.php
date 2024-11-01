@@ -32,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Password benar, lakukan tindakan yang sesuai (misalnya, set session)
             $_SESSION['username'] = $baris['username'];
             $_SESSION['user_id'] = $baris['id'];
+            $_SESSION['proses_login'] = true;
             header("Location: index.php?pesan=login_berhasil");
             exit();
         } else {
