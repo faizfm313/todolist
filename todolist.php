@@ -1,10 +1,10 @@
 <?php session_start(); ?>
 
 <?php
-if (isset($_GET['pesan']) and $_GET['pesan'] == 'hapus beerhasil') {
+if (isset($_GET['pesan']) and $_GET['pesan'] == 'hapus_berhasil') {
     //code
 ?>
-    <div class="alert alert-succes alert-dismissible fade show mt-2" role="alert">
+    <div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
         <strong>pesan!</strong> hapus berhasil.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
     </div>
@@ -36,15 +36,15 @@ if (isset($_GET['pesan']) and $_GET['pesan'] == 'hapus beerhasil') {
 <!-- navbar -->
 
 <body class="todolist d-flex flex-column min-vh-100">
-<nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-        
+
             <nav class="navbar bg-dark d-flex w-100">
                 <a class="navbar-brand" href="#">TO DO</a>
                 <form class="align-items-center">
                     <a class="btn btn-outline-success me-2" type="button" href="index.php?halaman=home">HOME</a>
                     <a class="btn  btn-outline-success me-2" type="button" href="todolist.php?halaman=home">TODOLIST</a>
-                    
+
                 </form>
                 <a class="btn btn-danger " href="logout.php?halaman=home">Log Out</a>
             </nav>
@@ -58,57 +58,57 @@ if (isset($_GET['pesan']) and $_GET['pesan'] == 'hapus beerhasil') {
         <a href="tambah_todolist.php">
             <button type="button" class="tombol2 btn btn-primary">Tambah</button>
         </a>
-        <table class="table table-striped table-bordered">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Kegiatan</th>
-                    <th scope="col">Tanggal</th>
-                    <th scope="col">Waktu</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Aksi</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                include "connection.php";
-                //hapus
-                if (isset($_GET['id'])) {
-                    $id = $_GET['id'];
-                    $sql = "DELETE FROM tb_kegiatan WHERE id='$id'";
-                    mysqli_query($connection, $sql);
-                    if (mysqli_affected_rows($connection) > 0) {
-                        header("location:?halaman=todolist&pesan=hapus_berhasil");
-                    } else {
-                        header("location:?halaman=todolist&pesan=hapus_gagal");
-                    }
-                }
-
-                //baca
-                $sql = "SELECT * FROM tb_kegiatan WHERE user_id=" . $_SESSION['user_id'];
-                $tabel = mysqli_query($connection, $sql);
-                $no = 0;
-                while ($baris = mysqli_fetch_array($tabel)) {
-                ?>
+            <table class="table table-striped table-bordered">
+                <thead>
                     <tr>
-                        <th scope="row"><?php echo ++$no; ?></th>
-                        <td><?php echo $baris['nama_kegiatan']; ?></td>
-                        <td><?php echo $baris['tanggal']; ?></td>
-                        <td><?php echo $baris['waktu']; ?></td>
-                        <td><?php echo $baris['status']; ?></td>
-                        <td>
-                            <a href="edit_todolist.php?id=<?= $baris['id'] ?>">
-                                <button class="btn btn-warning">Edit</button>
-                            </a>
-                            <a onclick="return confirm('Apakah kamu yakin?');" href="function.php?action=delete&id=<?= $baris['id'] ?>">
-                                <button class="btn btn-danger">Delete</button>
-                            </a>
-                        </td>
+                        <th scope="col">#</th>
+                        <th scope="col">Kegiatan</th>
+                        <th scope="col">Tanggal</th>
+                        <th scope="col">Waktu</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Aksi</th>
                     </tr>
-                <?php
+                </thead>
+        <tbody>
+            <?php
+            include "connection.php";
+            //hapus
+            if (isset($_GET['id'])) {
+                $id = $_GET['id'];
+                $sql = "DELETE FROM tb_kegiatan WHERE id='$id'";
+                mysqli_query($connection, $sql);
+                if (mysqli_affected_rows($connection) > 0) {
+                    header("location:?halaman=todolist&pesan=hapus_berhasil");
+                } else {
+                    header("location:?halaman=todolist&pesan=hapus_gagal");
                 }
-                ?>
-            </tbody>
+            }
+
+            //baca
+            $sql = "SELECT * FROM tb_kegiatan WHERE user_id=" . $_SESSION['user_id'];
+            $tabel = mysqli_query($connection, $sql);
+            $no = 0;
+            while ($baris = mysqli_fetch_array($tabel)) {
+            ?>
+                <tr>
+                    <th scope="row"><?php echo ++$no; ?></th>
+                    <td><?php echo $baris['nama_kegiatan']; ?></td>
+                    <td><?php echo $baris['tanggal']; ?></td>
+                    <td><?php echo $baris['waktu']; ?></td>
+                    <td><?php echo $baris['status']; ?></td>
+                    <td>
+                        <a href="edit_todolist.php?id=<?= $baris['id'] ?>">
+                            <button class="btn btn-warning">Edit</button>
+                        </a>
+                        <a onclick="return confirm('Apakah kamu yakin?');" href="function.php?action=delete&id=<?= $baris['id'] ?>">
+                            <button class="btn btn-danger">Delete</button>
+                        </a>
+                    </td>
+                </tr>
+            <?php
+            }
+            ?>
+        </tbody>
         </table>
     </div>
     <!-- End Main -->
@@ -116,7 +116,7 @@ if (isset($_GET['pesan']) and $_GET['pesan'] == 'hapus beerhasil') {
     <!--footer-->
     <footer class="my-footer mt-auto">
         <marquee>
-            <address>JADIKAN HARI INI LEBIH BAIK DARI HARI SEBELUMNYA </address>
+            <address><b>JADIKAN HARI INI LEBIH BAIK DARI HARI SEBELUMNYA!</b> </address>
         </marquee>
     </footer>
     <!--end footer-->

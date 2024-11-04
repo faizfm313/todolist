@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
         if (password_verify($password, $baris['password'])) {
-            // Password benar, lakukan tindakan yang sesuai (misalnya, set session)
+        
             $_SESSION['username'] = $baris['username'];
             $_SESSION['user_id'] = $baris['id'];
             $_SESSION['proses_login'] = true;

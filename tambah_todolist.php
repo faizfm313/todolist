@@ -118,7 +118,7 @@ if (isset($_GET['pesan']) and $_GET['pesan'] == 'tambah_berhasil') {
         <!--footer-->
         <footer class="my-footer mt-auto">
             <marquee>
-                <address>JADIKAN HARI INI LEBIH BAIK DARI HARI SEBELUMNYA </address>
+                <address><b>JADIKAN HARI INI LEBIH BAIK DARI HARI SEBELUMNYA!</b></address>
             </marquee>
         </footer>
         <!--end footer-->

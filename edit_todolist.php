@@ -134,7 +134,7 @@ $baris = mysqli_fetch_array($hasil);
     <!--footer-->
     <footer class="my-footer mt-auto">
         <marquee>
-            <address>JADIKAN HARI INI LEBIH BAIK DARI HARI SEBELUMNYA </address>
+            <address><b>JADIKAN HARI INI LEBIH BAIK DARI HARI SEBELUMNYA!</b> </address>
         </marquee>
     </footer>
     <!--end footer-->

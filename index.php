@@ -31,7 +31,6 @@ exit();
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <!-- navbar -->
 
@@ -61,7 +60,7 @@ exit();
     <!--footer-->
     <footer class="my-footer mt-auto">
         <marquee>
-            <address>JADIKAN HARI INI LEBIH BAIK DARI HARI SEBELUMNYA </address>
+            <address><b>JADIKAN HARI INI LEBIH BAIK DARI HARI SEBELUMNYA!</b></address>
         </marquee>
     </footer>
     <!--end footer-->

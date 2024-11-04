@@ -10,6 +10,8 @@
 .my-footer address{
     color: rgb(12, 12, 12);
     margin: auto;
+    text-shadow: #8e0e00;
+    
 }
 
 .container-fluid {
@@ -128,7 +130,7 @@
 }
 
 .container-content{
-    padding: 25px;
+    padding: 20px;
     background: linear-gradient(to right, #232526, #414345);
     background-size: cover;
     background-position: center;
@@ -137,10 +139,15 @@
     border-radius: 50px;
     box-shadow: 0px 16px 64px rgba(44, 12, 1, 5);
     margin-top: 15px;
+    margin-right: 350PX;
+    margin-left: 350px;
+    
 }
 .header-text {
     text-align: center;
-    color: green ;
+    color: green;
+    margin: 15px;
+
 
 }
 /* end index/home */
